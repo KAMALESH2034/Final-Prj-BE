@@ -18,6 +18,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(cors({
  
     origin:"https://zoomcarclonenew.netlify.app",
+     // origin:"http://localhost:5173",
     
 }));
 

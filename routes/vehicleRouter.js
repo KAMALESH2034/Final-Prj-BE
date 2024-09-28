@@ -17,9 +17,9 @@ router.post("/add-vehicle", async (req, res) => {
 router.get("/get-vehicle", auth, async (req, res) => {
   try {
     
-    console.log("fetching");
+    
     const vehicles = await Vehicle.find();
-    console.log(res.json(vehicles))
+    res.json(vehicles);
    
   } catch (err) {
     res.status(500).json({ message: err });
